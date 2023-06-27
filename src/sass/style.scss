@@ -15,8 +15,16 @@
     width: 1140px;
 }
 
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin-top: 25px;
+}
+
 @import 'blocks/promo.scss';
 @import 'blocks/title.scss';
 @import 'blocks/button.scss';
 @import 'blocks/sidepanel.scss';
 @import "blocks/menu.scss";
+@import "blocks/about.scss";
