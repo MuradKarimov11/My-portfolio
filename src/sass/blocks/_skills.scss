@@ -14,8 +14,27 @@
         text-align: center;
     }
     &__wrapper {
+        padding-left: 10px;
         margin-top: 60px;
         display: grid;
-        grid-template-columns: ;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+    }
+    &__box {
+        padding: 30px 29px 25px 30px;
+        border: 1px solid #000;
+        background: rgba(196, 196, 196, 0.00);
+        div {
+            height: 65px;
+        }
+        &-title {
+            margin-top: 20px;
+        }
+        &-text {
+            color: #000;
+            font-size: 12px;
+            margin-top: 15px;
+        }
     }
 }
