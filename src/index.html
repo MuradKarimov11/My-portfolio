@@ -505,7 +505,7 @@
 
                     <div class="contacts__social">
                         <a href="#" class="contacts__link">
-                            <img src="icons/social/facebook.svg" alt="facebook">
+                            <img src="icons/social/Facebook1.svg" alt="facebook">
                         </a>
                         <a href="#" class="contacts__link">
                             <img src="icons/social/telegram.svg" alt="telegram">
@@ -521,11 +521,11 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
 
@@ -534,7 +534,9 @@
                             <label for="text">Ваше сообщение</label>
                         </div>
 
-                        <button class="btn">Отправить сообщение</button>
+                        <div>
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                        </div>
                     </form>
                 </div>
 
