@@ -67,6 +67,22 @@
             width: 300px;
         }
     }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -77,6 +93,9 @@
     .title {
         &_fz48 {
             font-size: 26px;
+        }
+        &_fz36 {
+            font-size: 24px;
         }
     }
     .hamburger {
@@ -92,6 +111,14 @@
         background: url('../img/main_bg.jpg') no-repeat 57%/cover;
         &__btns {
             margin-top: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
         }
     }
 }
