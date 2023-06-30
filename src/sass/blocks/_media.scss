@@ -31,6 +31,19 @@
             padding: 60px 0 0;
         }
     }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3, 270px);
+            column-gap: 71px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(2, 456px);
+            grid-auto-rows: minmax(70px, auto);
+            &-line {
+                width: 450px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -67,6 +80,22 @@
             padding: 50px 0 0;
         }
     }
+    .skills {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 270px);
+            grid-template-rows: minmax(6, 270px);
+            column-gap: 160px;
+            row-gap: 25px;
+        }
+        &__ratings {
+            margin-top: 80px;
+            grid-template-columns: repeat(2, 340px);
+            grid-auto-rows: minmax(70px, auto);
+            column-gap: 40px;
+
+        }
+    }
 }
 
 
@@ -86,7 +115,7 @@
         }
     }
     .about {
-        padding-top: 40px;
+        padding-top: 70px;
         &__wrapper {
             grid-template: 400px auto auto / 1fr;
         }
@@ -107,6 +136,23 @@
             grid-template-columns: 540px;
             row-gap: 40px;
             padding: 50px 5px 0;
+        }
+    }
+    .skills {
+        padding: 70px 5px 0 5px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 260px);
+            grid-template-rows: repeat(4, 270px);
+            column-gap: 5px;
+            row-gap: 20px;
+        }
+        &__ratings {
+            margin-top: 70px;
+            grid-template-columns:535px;
+            grid-auto-rows: minmax(70px, auto);
+            &-line {
+                width: 535px;
+            }
         }
     }
 }
@@ -156,6 +202,28 @@
             grid-template-columns: 300px;
             padding: 40px 0 0;
             row-gap: 40px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        .title_fz36 {
+            line-height: 36px;
+            margin-top: 20px;
+        }
+        &__wrapper {
+            padding-left: 15px;
+            margin-top: 20px;
+            grid-template-columns: 270px;
+            row-gap: 20px;
+        }
+        &__ratings {
+            margin-top: 40px;
+            grid-template-columns: 300px;
+            grid-auto-rows: minmax(70px, auto);
+            row-gap: 40px;
+            &-line {
+                width: 300px;
+            }
         }
     }
 }
