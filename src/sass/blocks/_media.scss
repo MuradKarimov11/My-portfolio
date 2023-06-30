@@ -8,6 +8,9 @@
     .container {
         max-width: 960px;
     }
+    .promo {
+        padding-bottom: 120px;
+    }
     .about {
         &__wrapper {
             grid-template-columns: 400px 520px;
@@ -20,6 +23,12 @@
                 grid-template-columns: 40px 195px;
                 column-gap: 15px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            column-gap: 105px;
+            padding: 60px 0 0;
         }
     }
 }
@@ -37,6 +46,7 @@
         }
     }
     .about {
+        padding-top: 80px;
         &__wrapper {
             grid-template-columns: 300px 380px;
         }
@@ -47,6 +57,14 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 340px);
+            column-gap: 40px;
+            padding: 50px 0 0;
         }
     }
 }
@@ -78,9 +96,17 @@
         &__skills {
             grid-template-columns: repeat(2, 260px);
             &-item {
-                grid-template-columns: 40px 200px;
+                grid-template-columns: 40px 240px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: 540px;
+            row-gap: 40px;
+            padding: 50px 5px 0;
         }
     }
 }
@@ -97,6 +123,9 @@
         &_fz36 {
             font-size: 24px;
         }
+    }
+    .divider {
+        margin-top: 15px;
     }
     .hamburger {
         right: 20px;
@@ -119,6 +148,14 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 300px;
+            padding: 40px 0 0;
+            row-gap: 40px;
         }
     }
 }
