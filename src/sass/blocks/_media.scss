@@ -33,15 +33,14 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(3, 270px);
-            column-gap: 71px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
         }
         &__ratings {
-            grid-template-columns: repeat(2, 456px);
+            grid-template-columns: repeat(auto-fit, 350px);
             grid-auto-rows: minmax(70px, auto);
-            &-line {
-                width: 450px;
-            }
+            justify-content: space-between;
+            padding: 0 30px;
         }
     }
 }
@@ -83,21 +82,19 @@
     .skills {
         padding-top: 80px;
         &__wrapper {
-            grid-template-columns: repeat(2, 270px);
-            grid-template-rows: minmax(6, 270px);
-            column-gap: 160px;
-            row-gap: 25px;
+            padding: 0 20px;
         }
         &__ratings {
-            margin-top: 80px;
-            grid-template-columns: repeat(2, 340px);
-            grid-auto-rows: minmax(70px, auto);
-            column-gap: 40px;
-
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
+            &-line {
+                width: 100%;
+            }
         }
     }
 }
-
 
 @media (max-width: 768px) {
     .container {
@@ -141,17 +138,17 @@
     .skills {
         padding: 70px 5px 0 5px;
         &__wrapper {
-            grid-template-columns: repeat(2, 260px);
-            grid-template-rows: repeat(4, 270px);
-            column-gap: 5px;
-            row-gap: 20px;
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
         }
         &__ratings {
-            margin-top: 70px;
-            grid-template-columns:535px;
+            grid-template-columns: repeat(auto-fit, 320px);
             grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            margin-top: 40px;
             &-line {
-                width: 535px;
+                width: 100%;
             }
         }
     }
@@ -211,19 +208,10 @@
             margin-top: 20px;
         }
         &__wrapper {
-            padding-left: 15px;
             margin-top: 20px;
-            grid-template-columns: 270px;
-            row-gap: 20px;
         }
         &__ratings {
-            margin-top: 40px;
-            grid-template-columns: 300px;
-            grid-auto-rows: minmax(70px, auto);
-            row-gap: 40px;
-            &-line {
-                width: 300px;
-            }
+            grid-template-columns: repeat(auto-fit,300px);
         }
     }
 }
