@@ -109,6 +109,13 @@
     .portfolio {
         padding-top: 80px;
     }
+    .list {
+        padding-top: 80px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 350px);
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -170,6 +177,13 @@
     .portfolio {
         padding-top: 70px;
         &__wrapper {
+            justify-content: center;
+        }
+    }
+    .list {
+        padding-top: 70px;
+        &__wrapper {
+            margin-top: 25px;
             justify-content: center;
         }
     }
@@ -237,5 +251,11 @@
     }
     .portfolio {
         padding-top: 40px;
+    }
+    .list {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
+        }
     }
 }
