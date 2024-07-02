@@ -1,5 +1,5 @@
 {
-  "name": "uber",
+  "name": "my-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MuradKarimov11/uber_.git"
+    "url": "git+https://github.com/MuradKarimov11/My-portfolio_.git"
   },
   "author": "",
   "license": "ISC",
